@@ -13,7 +13,7 @@ function PostContent(props) {
   const { data } = props;
 
   const { data: listPost, error } = useSWR(
-    `${process.env.api_wp}/posts?per_page=10&_embed`,
+    `${process.env.api_wp}/posts?page=1&_embed`,
     fetcher
   );
 

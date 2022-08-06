@@ -24,9 +24,24 @@ function Hiring() {
     },
   ];
 
+  const dataMKT = [
+    {
+      img: "https://gofiber.b-cdn.net/tuyen-dung-digital-marketing.png",
+      position: "Digital Marketing",
+    },
+    {
+      img: "https://gofiber.b-cdn.net/tuyen-dung-seo.jpg",
+      position: "SEO",
+    },
+    {
+      img: "https://gofiber.b-cdn.net/tuyen-dung-content-seo.jpg",
+      position: "Content SEO",
+    },
+  ];
+
   return (
     <>
-      <div className="py-4 bg-slate-50">
+      <div className="py-4 bg-slate-50 px-2">
         <div className="container mx-auto">
           <h2 className="uppercase text-4xl font-bold text-center mb-0 py-4 lg:leading-snug">
             TUYỂN DỤNG
@@ -42,6 +57,12 @@ function Hiring() {
               Phòng Truyền Thông
             </h3>
             <ItemCareer data={dataTT} />
+          </div>
+          <div>
+            <h3 className="text-2xl text-center font-medium py-2 lg:text-3xl lg:text-left">
+              Phòng Marketing
+            </h3>
+            <ItemCareer data={dataMKT} />
           </div>
         </div>
       </div>

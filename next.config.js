@@ -9,6 +9,7 @@ const nextConfig = {
       "gofiber.b-cdn.net",
       "gofiber.dev",
     ],
+    allowFutureImage: true,
   },
   env: {
     api_wp: "https://gofiber.dev/wp-json/wp/v2",

@@ -13,13 +13,10 @@ function ItemCareer(props) {
               key={index}
               className="item-career my-3 relative rounded-md cursor-pointer hover:shadow-blue-900"
             >
-              <ZoomImage
-                src={item.img}
-                className="rounded-md cursor-pointer "
-              />
+              <ZoomImage src={item.img} className="rounded-md cursor-pointer" />
               <a
                 href={`mailto:${mailTo}`}
-                className="hidden btn-apply-now bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-4 absolute left-1/2 -translate-x-1/2 bottom-0 font-medium text-white rounded-md mb-12 shadow-lg shadow-cyan-500/50"
+                className="md:hidden btn-apply-now bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-4 absolute left-1/2 -translate-x-1/2 bottom-0 font-medium text-white rounded-md mb-12 shadow-lg shadow-cyan-500/50"
               >
                 Ứng tuyển ngay
               </a>

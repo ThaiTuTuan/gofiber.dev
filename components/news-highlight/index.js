@@ -5,28 +5,23 @@ import useSWR from "swr";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-function NewsHighLight({ props }) {
-  const { data, error } = useSWR(
-    `${process.env.api_wp}/posts?per_page=5&_embed`,
-    fetcher
-  );
-
-  if (error) return <div>failed to load</div>;
-  // if (!data) return <div>loading...</div>
+function NewsHighLight(props) {
+  const { data } = props;
 
   const show_posts_newest = () => {
     var result = null;
     if (data && data.length > 0) {
       const newArray = [...data];
       result = newArray.map((dt, index) => {
+        let embeded = dt._embedded;
         if (index === 0) {
           return (
             <Link href={`posts/${dt.slug}`} key={index}>
               <a>
                 <div
-                  className="thumbnail-post-large rounded-lg bg-no-repeat bg-center hover:scale-[1.005] ease-in duration-200"
+                  className="thumbnail-post-medium lg:thumbnail-post-large rounded-lg bg-no-repeat bg-center hover:scale-[1.005] ease-in duration-200"
                   style={{
-                    backgroundImage: `url(${dt._embedded["wp:featuredmedia"][0].source_url})`,
+                    backgroundImage: `url(${embeded["wp:featuredmedia"][0].source_url})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center center",
                   }}

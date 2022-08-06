@@ -10,7 +10,7 @@ function BannerComponent(props) {
         <div className="container mx-auto">
           <div className="flex justify-between items-center flex-col p-2 lg:flex-row">
             <div className="w-full lg:w-[50%]">
-              <article className="prose prose-sm lg:prose-lg ">
+              <article className="prose prose-sm lg:prose-lg md:mx-auto">
                 <h1 className="uppercase text-center mb-0 lg:text-left lg:leading-snug ">
                   Công Ty Công Nghệ Phần Mềm Gobiber
                 </h1>
@@ -22,7 +22,12 @@ function BannerComponent(props) {
               </article>
             </div>
             <div className="w-full px-10 py-10 lg:w-[50%] ">
-              <Image className="" src={img_banner} alt="" layout="responsive" />
+              <Image
+                className="animate-[ani1_2s_linear_infinite]"
+                src={img_banner}
+                alt=""
+                layout="responsive"
+              />
             </div>
           </div>
         </div>

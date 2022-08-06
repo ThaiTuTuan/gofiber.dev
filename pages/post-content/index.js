@@ -11,7 +11,6 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 function PostContent(props) {
   const { data } = props;
-
   const { data: listPost, error } = useSWR(
     `${process.env.api_wp}/posts?page=1&_embed`,
     fetcher

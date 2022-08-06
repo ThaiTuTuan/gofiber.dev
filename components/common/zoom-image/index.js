@@ -10,7 +10,6 @@ function ZoomImage(props) {
         className={props.className || ""}
         src={props?.src || ""}
         alt={props?.alt || "gofiber"}
-        layout="responsive"
         style={{
           cursor: "pointer",
         }}

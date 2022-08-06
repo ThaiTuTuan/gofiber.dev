@@ -1,7 +1,7 @@
 import Head from "next/head";
-import HomePage from "./home";
+import Homes from "./homes";
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
@@ -10,7 +10,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomePage />
+      <Homes data={posts} />
     </div>
   );
 }
+
+export const getStaticProps = async (context) => {
+  const response = await fetch(
+    `${process.env.api_wp}/posts?per_page=${5}&_embed`
+  );
+  const data = await response.json();
+
+  return {
+    props: {
+      posts: data,
+    },
+  };
+};

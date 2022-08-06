@@ -10,12 +10,13 @@ import Utilities from "../../components/utilities";
 import NetworkSecurity from "../../components/network-security";
 import Footer from "../../components/common/footer";
 
-function Home({ posts }) {
+function Homes(props) {
+  const { data } = props;
   return (
     <>
       <Header />
       <Banner />
-      <NewsHighLight />
+      <NewsHighLight data={data} />
       <CheckTools />
       <Solutions />
       <Utilities />
@@ -25,17 +26,4 @@ function Home({ posts }) {
   );
 }
 
-// export async function getStaticProps() {
-//   console.log("getStaticProps");
-//   const response = await fetch(
-//     `https://gofiber.dev/wp-json/wp/v2/posts?per_page=1&_embed`
-//   );
-//   const data = await response.json();
-//   return {
-//     props: {
-//       posts: data,
-//     },
-//   };
-// }
-
-export default Home;
+export default Homes;

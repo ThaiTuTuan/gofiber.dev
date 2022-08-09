@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
+
 import useSWR from "swr";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
@@ -27,6 +29,10 @@ function PostContent(props) {
 
   return (
     <>
+      <Head>
+        <title>Blog</title>
+      </Head>
+
       <Header />
 
       <div className="py-4 px-2">

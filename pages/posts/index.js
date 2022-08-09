@@ -1,4 +1,6 @@
 import React from "react";
+import Head from "next/head";
+
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
 import ListPosts from "../../components/list-post";
@@ -6,6 +8,10 @@ import ListPosts from "../../components/list-post";
 export default function Blogs({ posts }) {
   return (
     <>
+      <Head>
+        <title>Blog</title>
+      </Head>
+
       <Header />
       <ListPosts data={posts} />
       <Footer />

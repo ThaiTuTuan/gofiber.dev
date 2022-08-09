@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 import Header from "../../components/common/header";
 import Banner from "../../components/banner";
@@ -14,6 +15,9 @@ function Homes(props) {
   const { data } = props;
   return (
     <>
+      <Head>
+        <title>Trang chủ</title>
+      </Head>
       <Header />
       <Banner />
       <NewsHighLight data={data} />

@@ -17,7 +17,7 @@ const nextConfig = {
   },
 
   env: {
-    api_wp: "https://gofiber.dev/wp-json/wp/v2",
+    api_wp: "https://admin.gofiber.dev/wp-json/wp/v2",
   },
 };
 

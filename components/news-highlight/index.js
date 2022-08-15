@@ -19,7 +19,7 @@ function NewsHighLight(props) {
             <Link href={`posts/${dt.slug}`} key={index}>
               <a>
                 <div
-                  className="thumbnail-post-medium lg:thumbnail-post-large rounded-lg bg-no-repeat bg-center hover:scale-[1.005] ease-in duration-200"
+                  className="thumbnail-post-large rounded-lg bg-no-repeat bg-center hover:scale-[1.005] ease-in duration-200"
                   style={{
                     backgroundImage: `url(${embeded["wp:featuredmedia"][0].source_url})`,
                     backgroundSize: "cover",

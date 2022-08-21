@@ -4,38 +4,42 @@ import ItemCareer from "../common/item-career";
 function Hiring() {
   const dataIT = [
     {
-      img: "https://gofiber.b-cdn.net/GOFIBER-mobileappdeveloper-SATURDAY.jpg",
-      position: "Mobile Apps Developer",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-it-mobile-app.jpg",
+      position: "IT Mobile Apps",
     },
     {
-      img: "https://gofiber.b-cdn.net/it-website.jpg",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-it-website.jpg",
       position: "IT Website",
     },
   ];
 
   const dataTT = [
     {
-      img: "https://gofiber.b-cdn.net/content-truyen-thong.jpg",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-content.jpg",
       position: "Content Truyền Thông",
     },
     {
-      img: "https://gofiber.b-cdn.net/quan-ly-pr.png",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-quan-ly-hr.jpg",
       position: "Quản Lý PR",
     },
   ];
 
   const dataMKT = [
     {
-      img: "https://gofiber.b-cdn.net/tuyen-dung-digital-marketing.png",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-digital-marketing1.png",
       position: "Digital Marketing",
     },
     {
-      img: "https://gofiber.b-cdn.net/tuyen-dung-seo.jpg",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-seo1.jpg",
       position: "SEO",
     },
     {
-      img: "https://gofiber.b-cdn.net/tuyen-dung-content-seo.jpg",
-      position: "Content SEO",
+      img: "https://gofiber.b-cdn.net/tuyen-dung-fb-ads.jpg",
+      position: "Facebook ADS",
+    },
+    {
+      img: "https://gofiber.b-cdn.net/tuyen-dung-gg-ads.jpg",
+      position: "Google ADS",
     },
   ];
 

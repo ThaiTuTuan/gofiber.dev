@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
+import IndexPage from "../../components/common/index-page";
 import Header from "../../components/common/header";
 import Banner from "../../components/banner";
 import NewsHighLight from "../../components/news-highlight";
@@ -15,9 +16,8 @@ function Homes(props) {
   const { data } = props;
   return (
     <>
-      <Head>
-        <title>Trang chủ</title>
-      </Head>
+      <IndexPage />
+
       <Header />
       <Banner />
       <NewsHighLight data={data} />

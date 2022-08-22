@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+import IndexPage from "../../components/common/index-page";
 
 import useSWR from "swr";
 import Header from "../../components/common/header";
@@ -29,9 +29,7 @@ function PostContent(props) {
 
   return (
     <>
-      <Head>
-        <title>Blog</title>
-      </Head>
+      <IndexPage />
 
       <Header />
 

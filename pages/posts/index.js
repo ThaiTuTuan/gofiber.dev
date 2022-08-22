@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
+import IndexPage from "../../components/common/index-page";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
 import ListPosts from "../../components/list-post";
@@ -8,9 +9,7 @@ import ListPosts from "../../components/list-post";
 export default function Blogs({ posts }) {
   return (
     <>
-      <Head>
-        <title>Blog</title>
-      </Head>
+      <IndexPage />
 
       <Header />
       <ListPosts data={posts} />

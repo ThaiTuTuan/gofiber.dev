@@ -1,15 +1,11 @@
 import Head from "next/head";
 import Homes from "./homes";
+import IndexPage from "../components/common/index-page";
 
 export default function Home({ posts }) {
   return (
     <div>
-      <Head>
-        <title>Gofiber.dev</title>
-        <meta name="description" content="Gofiber.dev" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <IndexPage />
       <Homes data={posts} />
     </div>
   );

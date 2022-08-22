@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import logo from "../../../assets/images/logo-gofiber.png";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -31,61 +32,52 @@ function Footer() {
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Resources
+                  ĐỐI TÁC
                 </h2>
                 <ul className="text-gray-600 ">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
-                      798Bet
-                    </a>
+                    <Link href="/789bet">
+                      <a className="hover:underline">798BET</a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                      Jun88
-                    </a>
+                    <Link href="/jun88">
+                      <a className="hover:underline">JUN88</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Follow us
+                  &emsp;
                 </h2>
                 <ul className="text-gray-600 ">
                   <li className="mb-4">
-                    <a
-                      href="https://github.com/themesberg/flowbite"
-                      className="hover:underline "
-                    >
-                      Github
-                    </a>
+                    <Link href="/shbet">
+                      <a className="hover:underline">SHBET</a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
-                    >
-                      Discord
-                    </a>
+                    <Link href="/new88">
+                      <a className="hover:underline">NEW88</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Legal
+                  &emsp;
                 </h2>
                 <ul className="text-gray-600 ">
                   <li className="mb-4">
-                    <a href="#" className="hover:underline">
-                      Privacy Policy
-                    </a>
+                    <Link href="/f8bet">
+                      <a className="hover:underline">F8BET</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
-                    </a>
+                    <Link href="/moto88">
+                      <a className="hover:underline">MOTO88</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
